@@ -1,0 +1,206 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+	padding: 0px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #E8E8E8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.formulario {
+	min-width: 600px;
+	margin-top: 50px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.formulario > div {
+	margin-bottom: 20px;
+}
+
+.formulario label {
+	display: block;
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #1f1f1f;
+}
+
+.formulario input,
+.formulario textarea {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #e2e2e2;
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: 5px;
+	color: #1f1f1f;
+}
+
+.formulario input:focus {
+	outline: none;
+	border: 2px solid #0085FF;
+}
+
+.formulario .error {
+	color: #e92b2d;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.formulario button[type="submit"] {
+	display: block;
+	background: #0085FF;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	transition: .3s ease all;
+}
+
+.formulario button[type="submit"]:hover {
+	background: #0051ff;
+}
+
+.formulario .exito {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+	color: #02a802;
+}
+
+.formulario input[type="radio"] {
+	width: auto;
+}
+
+*/
+
+
+/* --------------------------- FOOTER --------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+	box-sizing: border-box;
+}
+
+.footer1 {
+    background-color: #BFE393;
+	color: #6A6A6A;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	;
+}
+h2{
+	margin-top: 50px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+/* ------------- Con esta aplicacion en el texto, se rompe al achicarlo ------------- */
+.texto-primer-columna{
+	text-align: start;
+	margin-left: 15% ;
+	margin-bottom: 55px;
+}
+.grid-containter {
+	margin-bottom: 100px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	text-align: center;
+	width: 100%;
+/* ---------- Dejar un AUTO cuando @media y 400px/480px normal --------*/	
+	height: auto;
+}
+/* ---------- Dejar un AUTO cuando @media y 400px/480px normal --------
+.grid-containter div {
+	height: 400px;
+}
+--------------------------------------------------------------------------*/
+/* --------------------------- Imagenes FOOTER --------------------------- */
+.insta-logo {
+	width: 65px;
+	height: auto;
+	color: white;
+	
+	margin-top: -20px;
+}
+.logo-footer{
+	width: 175px;
+	height: auto;
+	margin-top: 100px;
+	
+	
+}
+.ubi-tienda{
+	width: 20px;
+	margin-right: 10px ;
+	
+	
+}
+.data-random{
+	margin-bottom: 15px ;
+}
+
+/* --------------------------- Diseño Formulario --------------------------- */
+
+.textarea {
+	width: 100%;
+	height: 100px;
+	border-radius: 9px;
+	border-style: none;
+	margin-top: 12px;
+	padding-left: 9px ;
+	font-family: 'Roboto', sans-serif;
+}
+.email {
+	width: 100%;
+	height: 25px;
+	border-radius: 9px;
+	border-style: none;
+	margin-top: 12px;
+	padding-left: 9px ;
+	font-family: 'Roboto', sans-serif;
+}
+.nombre {
+	width: 100%;
+	height: 25px;
+	border-radius: 9px;
+	border-style: none;
+	padding-left: 9px ;
+	font-family: 'Roboto', sans-serif;
+}
+.btn-envio {
+	width: 105%;
+	height: 35px;
+	border-radius: 5px;
+	border-style: none;
+	background-color:#687D6A;
+	color: #FFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px ;
+	font-weight: 100;
+	margin-top: 12px;
+	cursor: pointer;
+
+}

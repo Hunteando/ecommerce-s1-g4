@@ -1,11 +1,16 @@
-import React from "react";
+import './App.css';
+import Footer from './componentes/footer';
+import Formulario from './componentes/formularioEx';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Desarrollando la pagina</h1>
-    </div>
+    <main>
+      
+      
+      <Footer />
+    </main>
+      
   );
-};
+}
 
 export default App;
