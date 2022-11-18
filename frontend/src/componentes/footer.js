@@ -16,9 +16,11 @@ const Footer = () => {
                     <div className="part-one">
                         <div className="texto-primer-columna">
                             <h2>Preguntas Frecuentes</h2>
-                            <p>Quienes Somos?</p>
-                            <p>Cuales son los medios de pago?</p>
-                            <p>Como realizar mi pedido?</p>
+                            <ol>
+                            <li>Quienes Somos?</li>
+                            <li>Cuales son los medios de pago?</li>
+                            <li>Como realizar mi pedido?</li>
+                            </ol>
                         </div>
                         <div>
                             <img className="data-random" src={datarandom} />
@@ -84,7 +86,7 @@ const Footer = () => {
 
 
                                 {({ values, errors, touched, handleSubmit, handleChange, handleBlur }) => (
-                                    <form htmlFor="nombre" className="formulario" onSubmit={handleSubmit}>
+                                    <form target="_blank" action="https://formsubmit.co/lautarolarrue@gmail.com" method="POST"  className="formulario" >
                                         <div>
 
                                             <input className="nombre"
@@ -135,7 +137,8 @@ const Footer = () => {
 
                                         <button type="submit" className="btn-envio"> Enviar </button>
                                         {formularioEnviado && <p className="exito">Formulario enviado con exito!</p>}
-
+                                        
+                                        <input  type="hidden" name="_captcha" value="false"></input>
                                     </form>
                                 )}
 

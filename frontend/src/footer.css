@@ -1,100 +1,102 @@
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap');
 
-* {
-	padding: 0px;
-	margin: 0;
-	box-sizing: border-box;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
-body {
-	background: #E8E8E8;
-	font-family: 'Open Sans', sans-serif;
+body{
+    
+    background-color: #ADD082;
+    font-family: 'Poppins', sans-serif;
+    
 }
-
-.contenedor {
-	min-height: 100vh;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+/* --------------- Tamaño del Carousel ----------------- */
+main {
+    max-width: 100%;
+    margin:  auto;
+    overflow: hidden;
 }
-
-.formulario {
-	min-width: 600px;
+/*--------------- Tamaño del Slide IMG ----------------- */
+.img-slide{
+    height: auto;
+    width: 100%;
+    max-height: 500px ;
+}
+strong {
+    font-size: 65px;
+    
+}
+.imagen-informativa {
+    font-size: 25px;
+}
+/* --------------- Tamaño de flechas ----------------- */
+svg {
+    width: 30px;
+    height: 30px;
+    
+}
+.De {
+    margin-top: 120%;
+}
+/* ------------------Imagenes Barra Debajo Slide-------------------------- */
+.img-barra_info{
+    height: 200px;
+    width: auto; 
+    
+    
+}
+/* ------------------Imagenes Barra Debajo Slide BORDES-------------------------- */
+#conteiner-pagos, #conteiner-envios, #conteiner-tienda{
+    
+    background-color: #F2F2F2;
+    
+}
+#conteiner-pagos{
+    
+	border-left: none;
+}
+/* ------------------ Color de fondo por las barras -------------------------- */
+.conteiner-metodos-info {
+background-color: #F2F2F2;
+}
+/* ------------------ Barras de division -------------------------- */
+.div-barra{
+	width: 2px;
+	border: 0.5px solid #6A6A6A;
+	height: 250px;
 	margin-top: 50px;
-	background: #fff;
-	border-radius: 5px;
-	padding: 20px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.formulario > div {
-	margin-bottom: 20px;
+/* ------------------FORMULARIO-------------------------- */
+
+.form{
+    text-align: center;
 }
 
-.formulario label {
-	display: block;
-	font-weight: 600;
-	font-size: 14px;
-	margin-bottom: 5px;
-	color: #1f1f1f;
+/*
+button img {
+    height: 50px;
 }
-
-.formulario input,
-.formulario textarea {
-	font-family: 'Open Sans', sans-serif;
-	width: 100%;
-	border-radius: 5px;
-	border: 2px solid #e2e2e2;
-	font-size: 18px;
-	padding: 10px;
-	margin-bottom: 5px;
-	color: #1f1f1f;
+button {
+    background-color: #BFE393;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-
-.formulario input:focus {
-	outline: none;
-	border: 2px solid #0085FF;
+.btn-slide-left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    
+    background-color: #fff;
+    
+    transition: 0.5s;
 }
-
-.formulario .error {
-	color: #e92b2d;
-	font-weight: 600;
-	font-size: 12px;
-}
-
-.formulario button[type="submit"] {
-	display: block;
-	background: #0085FF;
-	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	padding: 10px;
-	border-radius: 5px;
-	color: #fff;
-	font-size: 16px;
-	transition: .3s ease all;
-}
-
-.formulario button[type="submit"]:hover {
-	background: #0051ff;
-}
-
-.formulario .exito {
-	text-align: center;
-	font-size: 14px;
-	padding-top: 20px;
-	color: #02a802;
-}
-
-.formulario input[type="radio"] {
-	width: auto;
-}
-
 */
-
 
 /* --------------------------- FOOTER --------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
@@ -104,11 +106,13 @@ body {
 }
 
 .footer1 {
-    background-color: #BFE393;
+    background-color: #ADD082;
 	color: #6A6A6A;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	;
+	
+	
+	
 }
 h2{
 	margin-top: 50px;
@@ -120,8 +124,11 @@ h2{
 /* ------------- Con esta aplicacion en el texto, se rompe al achicarlo ------------- */
 .texto-primer-columna{
 	text-align: start;
-	margin-left: 15% ;
+	padding-left: 20%;
 	margin-bottom: 55px;
+}
+li {
+	list-style: none;
 }
 .grid-containter {
 	margin-bottom: 100px;
@@ -143,7 +150,7 @@ h2{
 	height: auto;
 	color: white;
 	
-	margin-top: -20px;
+	
 }
 .logo-footer{
 	width: 175px;
