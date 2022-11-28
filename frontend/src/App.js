@@ -7,11 +7,21 @@ import barraInformativa from './componentes/barraInformativa';
 
 function App() {
   return (
+    <>
     <main>
+
       <barraInformativa />
       <Slideshow />
       <Footer />
-    </main>
+    </main><main>
+        <form>
+          <label htmlFor=''>Usuario</label>
+          <input type='text' placeholder='Usuario' />
+          <p>Lorem</p>
+        </form>
+      </main>
+      </>
+    
       
   );
 }
