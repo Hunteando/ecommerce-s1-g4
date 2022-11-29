@@ -3,12 +3,12 @@ const express = require("express");
 const indexRouter = require("./routes/index");
 const authRouter = require("./routes/auth");
 const productRouter = require("./routes/products");
-const comprasRouter = require("./routes/compras");
 const checkoutRouter = require("./routes/chekout");
 const dashboardRouter = require("./routes/dashboard");
 const categoriesRouter = require("./routes/categories");
 const cors = require('cors');
 const corsOptions = require('./database/config/corsOptions');
+const carritoRouter = require("./routes/compras");
 
 
 
@@ -30,7 +30,6 @@ app.use(cors({
 
 //************Rutas******* **/
 /* RUTAS QUE FALTAN */
-//Carrito de compras (/compras)
 //niciar Sesión (/login)
 //Registro (/registrar)
 //Dashboard (/dashboard/cliente)
@@ -38,10 +37,11 @@ app.use(cors({
 app.use("/", indexRouter);
 app.use("/", authRouter);
 app.use("/productos", productRouter);
-app.use("/compras", comprasRouter);
+app.use("/compras", carritoRouter);
 app.use("/checkout", checkoutRouter);
 app.use("/dashboard", dashboardRouter);
 app.use("/categorias", categoriesRouter);
+
 
 
 
