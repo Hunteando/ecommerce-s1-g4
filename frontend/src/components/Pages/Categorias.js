@@ -4,6 +4,7 @@ import { Loading } from "../"
 import '../Style/categorias.css'
 import '../Style/MainCard.css'
 import { useSelector, useDispatch } from 'react-redux'
+import { changeCategory } from '../../reducers/categoryReducer'
 
 export const Categorias = () => {
 
@@ -11,11 +12,13 @@ export const Categorias = () => {
   const [filter, setFilter] = useState(products);
   const [loading, setLoading ] = useState(false);
   const [firstLoad, setFirstLoad ] = useState(false)
-  const [selected, setSelected ] = useState("bebe");
+  
 
-    const categoryState = useSelector(state => state.change);
-    const thisCategory = categoryState[0];
- 
+  const categoryState = useSelector(state => state.change);
+  const thisCategory = categoryState[0];
+
+  const [selected, setSelected ] = useState(thisCategory);
+
   const dispatch = useDispatch();
 
 
@@ -26,7 +29,7 @@ export const Categorias = () => {
 
 useEffect(() => {
 
-  const getProduct = async () => {
+  const getProduct = async () => {    
     setLoading(true);
     const response = await fetch(URL+"productos");
     const jsonClone = await response.clone().json();
@@ -43,21 +46,21 @@ useEffect(() => {
     }
 
   }
-
     getProduct();
    
         
 },[]);
 
 const filterProduct = async (newCat) => {
-  const updatedList = products.filter((product)=> product.category.nameCategory == newCat); {/* Cambiar id por category */}
+  const updatedList = products.filter((product)=> product.category.nameCategory == newCat);
   setFilter(updatedList)
 }
 
 const changeView = (newCat) => {
+  dispatch(changeCategory(newCat))
   newCat === "Todos" ? 
   (setFilter(products), setSelected("Todos")) : 
-  filterProduct(newCat).then(setSelected(newCat))
+  filterProduct(newCat).then(setSelected(newCat)); 
 }
 
 const firstLoading = ( showSelectedCat ) => {
@@ -68,10 +71,8 @@ const firstLoading = ( showSelectedCat ) => {
 const ShowProducts = () => {
  
   return(
-    <>      
-      <div 
-      onLoad={() => !firstLoad ? firstLoading(thisCategory) : setFirstLoad(true) }
-      className='d-flex w-100 flex-column justify-content-center aling-items-center'>
+          
+      <div className='d-flex w-100 flex-column justify-content-center aling-items-center'>
         
       <div className='buttons d-flex justify-content-around my-3 flex-wrap'>
         
@@ -96,15 +97,15 @@ const ShowProducts = () => {
           <Cards products={filter} />
         </div>
       </div>
-    </>
+    
   );
 };
 
-
-
   return (
-    <>
-      <div className='d-flex-colums align-items-center '>
+    <> 
+      <div onMouseMove={()=> thisCategory !== selected? changeView(thisCategory) : "" }
+      onLoad={() => !firstLoad ? firstLoading(thisCategory) : setFirstLoad(true)}
+      className='d-flex-colums align-items-center '>
         
         <h2 className='category-tittle d-block text-center text-uppercase py-2'>Categorias</h2>
                   

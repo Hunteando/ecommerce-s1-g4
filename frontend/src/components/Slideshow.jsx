@@ -297,10 +297,15 @@ const Boton = styled.button`
 //------------------------- Barra Nueva ---------------------
 const Imagen = styled.div`
 
-padding: 50px 0px 50px 110px;
+
 width: 33.33%;
 justify-content: space-between;
 background: #fff;
+
+@media screen and (max-width: 850px) {
+    
+}
+
 
 //border-radius: 50px;
 

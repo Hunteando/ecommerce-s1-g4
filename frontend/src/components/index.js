@@ -7,3 +7,8 @@ export { Loading } from "./Loading"
 export { Footer } from './Footer'
 export { Slideshow } from './Slideshow'
 export { BarraInformativa } from './BarraInformativa'
+export { Carrito } from './Carrito'
+export { DashboarCategorias } from './DashboarCategorias'
+export { DashboarOrdenes } from './DashboarOrdenes'
+export { DashboarProductos } from './DashboarProductos'
+export { DashboarUsuarios } from './DashboarUsuarios'

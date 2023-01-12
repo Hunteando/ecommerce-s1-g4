@@ -41,7 +41,7 @@
 }
 
 .icon-box {
-    margin-left:-70px;
+    margin-left:-130px;
 }
 
 .dropdown-item {
@@ -63,6 +63,15 @@
     z-index: 5;
     color: black;
 }
+
+.carrito-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    background-color: #3b3b3b83;
+    z-index: 100;
+}
+
 
 
 @media (max-width: 1325px) {

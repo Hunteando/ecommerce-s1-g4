@@ -1,0 +1,99 @@
+.detalle-data_container {
+    border: 2px solid #6a6a6a5b;
+    border-radius: 10px;
+    width: 90%;    
+    color: #4F5F56;
+}
+
+.detalle-number{
+    background-color: #ADD082;
+    border-radius: 100%;
+    border: none;
+    width: 8%;
+    margin-left: 15px;
+    font-weight: 600;
+    margin-right: 7%;
+    color: #4F5F56;
+}
+
+.detalle-data_field {
+    border: 1px solid #6a6a6a9f;
+    border-radius: 5px;
+    width: 90%;  
+    color: #4F5F56;
+}
+
+.detalle-data_field:hover {
+    border-color: #4F5F56;
+}
+
+.btn-submit {
+    border-radius: 10px;
+    background-color: #BFE393;
+    font-weight: 600;
+    color: #505050;
+}
+
+.btn-submit:hover {
+    background-color: #ADD082;
+    color: #4F5F56;
+}
+
+.btn-sending {
+    border: 1px solid #6a6a6a4f;
+    border-radius: 5px;
+    width: 90%;  
+    color: #4F5F56;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 600;
+}
+
+.btn-sending:hover {
+    border-width: 3px;
+    border-color: #4F5F56;
+}
+
+.selected {
+    border-width: 3px;
+    border-color: #ADD082;
+}
+
+.detalle-data_send {
+    width: 90%;    
+    color: #4F5F56;
+}
+
+.viewMap{ 
+    font-weight: 600;
+    font-size: large;
+    color: #505050;
+}
+
+.size-90 {
+    width: 90%;
+}
+
+.item-text {
+    font-weight: 600;
+    font-size: larger;
+    color: #3B3B3B;
+}
+
+.container-totalcost {
+    border-top: 2px solid #a6a6a663;
+}
+
+.total-border {
+    border-top: 2px solid #a6a6a6b6;
+}
+
+.subtotal-font {
+    font-size: large;
+    font-weight: 600;
+}
+
+.total-font {
+    font-size: xx-large;
+    font-weight: 600;
+}

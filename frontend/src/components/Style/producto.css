@@ -8,8 +8,6 @@
     margin: 20px;
 }
 
-.product-container 
-
 .product-img {
     background: linear-gradient(0deg, rgba(244,244,244,1) 41%, rgba(237,237,237,1) 49%, rgba(224,224,224,1) 49%, rgba(215,215,215,1) 100%);
 }
@@ -17,7 +15,6 @@
 .product-img_selected {
     border: 2px solid #4F5F56;
 }
-
 
 .product-tittle_discount {
     color: white;
@@ -29,6 +26,11 @@
 
 .product-price {
     color: #4F7553;
+    font-weight: 600;
+}
+
+.product-ss {
+    color: #b30505;
     font-weight: 600;
 }
 

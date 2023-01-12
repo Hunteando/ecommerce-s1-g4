@@ -1,0 +1,31 @@
+.dashboard-main_container {
+    height: 100vh;
+}
+
+.dashboard-item_container {
+    background: #ffffff;
+    width: 15%;
+    border-right: 1px solid #ffffff;
+    
+}
+.dashboard-item_category {
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #8d8d8d;
+    cursor: pointer;
+}
+
+.dashboar-text_item {
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3B3B3B;
+}
+
+.selected-item {
+    background-color: #D5E5C2;
+}
+
+.dashboard-item_category:hover {
+    background-color: #d5e5c2a9;
+}

@@ -36,7 +36,7 @@ strong {
 .De {
 	width: 30px;
     height: 30px;
-    margin-top: 120%;
+    margin-top: 48%;
 }
 .Iz{
 	width: 30px;
@@ -48,27 +48,6 @@ strong {
     width: auto; 
     
     
-}
-/* ------------------Imagenes Barra Debajo Slide BORDES-------------------------- */
-#conteiner-pagos, #conteiner-envios, #conteiner-tienda{
-    
-    background-color: #F2F2F2;
-    
-}
-#conteiner-pagos{
-    
-	border-left: none;
-}
-/* ------------------ Color de fondo por las barras -------------------------- */
-.conteiner-metodos-info {
-background-color: #F2F2F2;
-}
-/* ------------------ Barras de division -------------------------- */
-.div-barra{
-	width: 2px;
-	border: 0.5px solid #6A6A6A;
-	height: 200px;
-	margin-top: 50px;
 }
 
 /* ------------------FORMULARIO-------------------------- */
@@ -223,4 +202,150 @@ button {
 	margin-top: 12px;
 	cursor: pointer;
 
+}
+
+/* ------------------Imagenes Barra Debajo Slide BORDES-------------------------- */
+#conteiner-pagos, #conteiner-envios, #conteiner-tienda{
+    text-align: center;
+	margin-top: 8px;
+    background-color: #F2F2F2;
+    
+}
+
+#conteiner-tienda {
+	margin-top: 14px;
+}
+
+#conteiner-pagos{
+    
+	border-left: none;
+}
+/* ------------------ Color de fondo por las barras -------------------------- */
+.conteiner-metodos-info {
+background-color: #F2F2F2;
+}
+/* ------------------ Barras de division -------------------------- */
+.div-barra{
+	width: 2px;
+	border: 0.5px solid #6A6A6A;
+	height: 200px;
+	margin-top: 25px;
+}
+
+
+/* ---------- Adaptacion de dispositivos ---------------- */
+/*
+@media ( max-width: 1023px
+		 ) {
+	.img-barra_info, .imagen-informativa { 
+		margin-left: -50px;
+		width: auto;
+		height: 180px;
+		
+	}
+	@media (min-width: 768px) {
+		.imagen-informativa {
+		background-color: chocolate;
+		font-size: 20px ;
+		}
+		
+	}
+}
+
+
+@media (max-width: 768px) {
+	.img-barra_info {
+		width: auto;
+
+	}
+	.imagen-informativa {
+		text-align: center;
+		font-size:   18px ;
+		background-color: aqua
+
+		}
+	@media (min-width: 400px) {
+		.imagen-informativa {
+		text-align: center;
+		font-size:   18px ;
+		margin-right: 17%;
+		background-color: aqua
+
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	}
+
+*/
+
+
+@media (max-width: 991px) {
+	.conteiner-metodos-info{
+		display: flex;
+		
+		
+	}
+	.img-barra_info  { 
+		width: 150px;
+		height: 140px;
+		justify-content: flex-end;
+		margin-left: -15%;
+		
+	}
+	.imagen-informativa{
+		font-size:   18px ;
+		margin-left: -12%;
+	}
+	.div-barra {
+		height: 120px;
+	}
+}
+
+  
+
+@media (max-width: 850px) {
+    .imagen-informativa 
+	{
+	
+		
+	}
+	.div-barra {
+		display: none;
+	}
+	.img-barra_info  { 
+		width: 95px;
+		height: 80px;
+	}
+	.imagen-informativa{
+		font-size:   14px ;
+		
+	}
+}
+
+
+@media (max-width: 600px) {
+	.conteiner-metodos-info{
+		
+		margin: 0;
+		
+		
+		
+	}
+	.img-barra_info  { 
+		width: 75px;
+		height: 60px;
+		
+		
+	}
+	.imagen-informativa{
+		font-size:   12px ;
+		
+		
+	}
+	.div-barra {
+		display: none;
+	}
 }

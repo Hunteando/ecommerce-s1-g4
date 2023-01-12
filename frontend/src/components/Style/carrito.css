@@ -1,0 +1,35 @@
+.carrito-container {
+    position: fixed;
+    font-size: medium;
+    right: 0;
+    top: 0px;
+    height: 70vh;
+    width: 30vw;
+    background-color: white;
+    z-index: 100;
+}
+
+.carrito-title {
+    color: #3B3B3B;
+    background-color: #ADD082;
+    z-index: 100;
+}
+
+.carrito-buyData {
+    border-top: 2px solid #3b3b3b3a;
+    z-index: 100;
+}
+
+.item-quantity_conteiner {
+    border: 1px solid rgba(65, 65, 65, 0.959);
+    width: 100px;  
+    z-index: 100; 
+}
+
+.item-quantity_number {
+    border: none;
+    text-align: center;
+    width: 30px;
+    z-index: 100;
+
+}

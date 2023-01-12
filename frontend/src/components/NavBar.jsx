@@ -9,12 +9,13 @@ import { BsSearch } from 'react-icons/bs'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { changeCategory } from '../reducers/categoryReducer'
+import { Carrito } from '../components'
 
 
 export const NavBar = () => {
 
   const [user, setUser] = useState("");
-  const [category, setCategory] = useState("")
+  const [showCart, setShowCart] = useState(false)
 
   const dispatch = useDispatch()
 
@@ -38,17 +39,17 @@ export const NavBar = () => {
               </Link>
               <ul className="dropdown-menu navbar-box">
                 <li><Link
-                  onClick={()=> {dispatch(changeCategory("Hogar"))}}
-                 className="dropdown-item px-2" to={"/categorias"}>LINEA HOGAR</Link></li>
-                 <li><Link
-                  onClick={()=> {dispatch(changeCategory("Linea Bebe"))}}
-                 className="dropdown-item px-2" to={"/categorias"}>LINEA BEBÉ</Link></li> {/*Filtrar*/}
-                <li><Link 
-                  onClick={()=> {dispatch(changeCategory("Accesorio"))}}
-                className="dropdown-item px-2" to={"/categorias"}>ACCESORIOS</Link></li>
-                <li><Link 
-                  onClick={()=> {dispatch(changeCategory("Todos"))}}
-                className="dropdown-item px-2" to={"/categorias"}>TODOS LOS PRODUCTOS</Link></li>
+                  onClick={() => { dispatch(changeCategory("Hogar")) }}
+                  className="dropdown-item px-2" to={"/categorias"}>LINEA HOGAR</Link></li>
+                <li><Link
+                  onClick={() => { dispatch(changeCategory("Linea Bebe")) }}
+                  className="dropdown-item px-2" to={"/categorias"}>LINEA BEBÉ</Link></li> {/*Filtrar*/}
+                <li><Link
+                  onClick={() => { dispatch(changeCategory("Accesorio")) }}
+                  className="dropdown-item px-2" to={"/categorias"}>ACCESORIOS</Link></li>
+                <li><Link
+                  onClick={() => { dispatch(changeCategory("Todos")) }}
+                  className="dropdown-item px-2" to={"/categorias"}>TODOS LOS PRODUCTOS</Link></li>
               </ul>
             </li>
           </ul>
@@ -75,18 +76,26 @@ export const NavBar = () => {
               </li>
 
               <li className="nav-item dropdown">
+
                 <Link className="nav-link flex-fill" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <FaShoppingCart className='btn nav-btn' size={'3.5em'}
-                    onClick={() => console.log("cart")}
-                  />{/*carrito*/}
+                  <FaShoppingCart onClick={() => setShowCart(true)} className='btn nav-btn' size={'3.5em'} />
                 </Link>
-                <ul className="dropdown-menu navbar-box icon-box">
-                  <li><Link className="dropdown-item " to={"/registro"}>carrito</Link></li> {/*carrito*/}
+
+                <ul className={`${showCart ? "" : "d-none"} icon-box`}>
+
+                  <div className='carrito-fondo w-100 h-100'>
+
+                    <li onMouseLeave={() => setShowCart(false)} >
+
+                      <Carrito />
+
+                    </li> {/*carrito*/}
+
+                  </div>
                   
                 </ul>
-                </li>
 
-
+              </li>
 
             </ul>
 
